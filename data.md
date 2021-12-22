@@ -29,18 +29,18 @@
 ]}
 
 {"name":"设计教程", "catgory":"jiaocheng", "data":[
-	{"name":"IconFont","href":"https://www.iconfont.cn/","src":"./nav_img/sdcnav-1-icon.png","desc":"国内最著名的图标搜索及管理平台，300万个图标下载"},
-	{"name":"FreePik","href":"https://www.freepik.com/","src":"./nav_img/nav-freepik.png","desc":"知名设计素材站！PSD、矢量图、图库应有尽有"},
-	{"name":"每日灵感","href":"https://uiiiuiii.com/inspiration","src":"./nav_img/sdcnav-1-uu2.png","desc":"优设旗下灵感频道，每日都有新灵感"},
-	{"name":"摄图网","href":"http://699pic.com","src":"./nav_img/sdcnav-1-4.png","desc":"1000万+图片、插画、视频、模板，免费下载"},
-	{"name":"千图网","href":"https://www.58pic.com/","src":"./nav_img/sdcnav-1-5new.png","desc":"推荐！海量设计素材下载！无限灵感轻松设计"},
-	{"name":"细节猎人","href":"https://www.uisdc.com/hunter","src":"./nav_img/nav-hunter-0319.png","desc":"每日必读！提升设计师含金量的宝藏频道"},
-	{"name":"字由商用字体","href":"https://www.hellofont.cn/","src":"./nav_img/hellofont.png","desc":"推荐！近1000款免费商用字体一键拥有，设计师必备"},
-	{"name":"包小盒3D包装设计","href":"https://www.baoxiaohe.com/","src":"./nav_img/nav-baoxiaohe.png","desc":"推荐！素材免费可商用，3D包装设计，超多刀版图"},
-	{"name":"包图网","href":"https://ibaotu.com/","src":"./nav_img/sdcnav-1-11.png","desc":"推荐！1000万套原创品质商用素材，效率神器"},
-	{"name":"Dribbble","href":"https://dribbble.com/","src":"./nav_img/sdcnav-4-1.png","desc":"国际知名设计站点！资深设计师必备"},
-	{"name":"即时设计","href":"https://js.design/","src":"./nav_img/nav-js-design.png","desc":"推荐！免费专业级UI设计工具，可云端协作的Sketch"},
-	{"name":"花瓣网","href":"https://huaban.com/","src":"./nav_img/sdcnav-8-2.png","desc":"设计师寻找灵感的必备站点，启发设计灵感"},
+	{"name":"优优教程网","href":"https://uiiiuiii.com/","src":"./nav_img/sdcnav-1-uu3.png","desc":"超人气的优质中文教程网站，PS、AI、AE、C4D"},
+	{"name":"PSDTuts","href":"https://design.tutsplus.com/","src":"./nav_img/sdcnav-2-1.png","desc":"Photoshop教程，从初学者到高级进阶，应有尽有"},
+	{"name":"Adobe 设计周报","href":"https://create.adobe.com/","src":"./nav_img/sdcnav-2-2.png","desc":"Adobe官方站！大神们通过全家桶创作过程的经验总结"},
+	{"name":"PhotoshopVIP","href":"https://photoshopvip.net/","src":"./nav_img/sdcnav-2-3.png","desc":"日本超人气设计站点，网站很多干货"},
+	{"name":"Smashing Magazine","href":"https://www.smashingmagazine.com/","src":"./nav_img/sdcnav-2-4.png","desc":"国外最著名的设计博客，许多高大上的设计文章"},
+	{"name":"数字艺术在线","href":"https://www.digitalartsonline.co.uk/tutorials/","src":"./nav_img/sdcnav-2-5.png","desc":"教程都很棒！你更会爱上网站展现教程的回廊方式"},
+	{"name":"优设网","href":"https://www.uisdc.com/","src":"./nav_img/sdcnav-2-7.png","desc":"与大师零距离接触，一线设计师、总监的干货分享地"},
+	{"name":"Photoshop Lady","href":"https://www.photoshoplady.com/","src":"./nav_img/sdcnav-2-6.png","desc":"提供各种详细的photoshop教程，优设联盟站点"},
+	{"name":"PSD爱好者","href":"http://psd.fanextra.com/","src":"./nav_img/sdcnav-2-9.png","desc":"提供Photoshop教程、设计文章和资源下载"},
+	{"name":"站酷","href":"https://www.zcool.com.cn/","src":"./nav_img/sdcnav-2-10.png","desc":"综合性设计分享网站，原创设计交流平台"},
+	{"name":"Abduzeedo","href":"https://abduzeedo.com/","src":"./nav_img/sdcnav-2-11.png","desc":"汇集大量视觉灵感和酷炫PS教程的设计博客"},
+	{"name":"Coliss","href":"https://coliss.com/","src":"./nav_img/sdcnav-2-12.png","desc":"日本有名站点！大量网站制作相关的设计技巧和神器"}
 ]}
 
 {"name":"界面设计", "catgory":"design", "data":[
