@@ -411,34 +411,6 @@ function strToJson(str){
 	var json = (new Function("return " + str))();   
 	return json;   
 }
-var timer
-var func_load = false
-function checkFunc(){
-	try {
-	    if(typeof add_nav_content === "function") {
-	    	 clearTimeout(timer)
-	    	func_load = true
-	        console.log("is function");
-	        // jsonp远程调用函数
-	        var url = "./jsonp/index.js";
-			jQuery.ajax({
-				url: url,
-				type: "GET",
-				dataType: "jsonp",  //指定服务器返回的数据类型
-				// jsonpCallback: "add_nav_content",  //指定回调函数名称
-				success: function (data) {
-					console.info("调用success");
-					Sidebar(jQuery);
-				}
-			});
-	    } else { //不是函数
-	    	func_load = false
-	        console.log("not is function");
-	    }
-	} catch(e) {}
-}
-
-
 // 返回顶部
 var obtn = document.getElementById('back-top');
 var timer2 = null;
@@ -475,13 +447,6 @@ obtn.onclick = function(){
         }
     },30);  
 };
-
-
-(function($){
-	$(document).ready(function () {
-		timer = setInterval("checkFunc()","200");
-	});
-})(jQuery);
 
 (function($){
   var p=$('.part');

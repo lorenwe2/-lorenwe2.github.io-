@@ -20,6 +20,36 @@
   WebAssembly.instantiateStreaming(fetch("./wasm/main.wasm"), go.importObject).then((result) => {
     go.run(result.instance);
   });
+  // 判断是否初始化函数，初始化后开始加载远程数据
+  var timer
+  var func_load = false
+  window.addEventListener('DOMContentLoaded', () => {
+    timer = setInterval("checkFunc()","200");
+  });
+  function checkFunc(){
+    try {
+      if(typeof add_nav_content === "function") {
+        clearTimeout(timer)
+        func_load = true
+        console.log("is function");
+        // jsonp远程调用函数
+        var url = "./jsonp/index.js";
+        jQuery.ajax({
+          url: url,
+          type: "GET",
+          dataType: "jsonp",  //指定服务器返回的数据类型
+          // jsonpCallback: "add_nav_content",  //指定回调函数名称
+          success: function (data) {
+            console.info("调用success");
+            Sidebar(jQuery);
+          }
+        });
+      } else { //不是函数
+        func_load = false
+        console.log("not is function");
+      }
+    } catch(e) {}
+  }
 </script>
 </head>
 <body class="body-home body-website">
