@@ -448,16 +448,16 @@ obtn.onclick = function(){
     },30);  
 };
 
-(function($){
-  var p=$('.part');
-  if(p.length<1) return;
-  var arr=[];
-  function part_offset_top() {
+var p;
+var arr=[];
+function part_offset_top() {
+	p = jQuery('.part');
     p.each(function () {
-      var of=$(this).offset();
+      var of=jQuery(this).offset();
       arr.push(Math.floor(of.top));
     });
   }
+function content_sidebar_current($) {
   function goto_current(index) {
     var a=$('#goto dd');
     var b=$('#goto dt');
@@ -476,7 +476,7 @@ obtn.onclick = function(){
     			|| document.documentElement.scrollTop
     			|| document.body.scrollTop
     			|| 0;
-    var limit=Math.ceil(st+20);
+    var limit=Math.ceil(st+50);
     var index=0;
     for (var i = 0; i < arr.length; i++) {
       if (limit>=arr[i]) {
@@ -490,17 +490,17 @@ obtn.onclick = function(){
       p.removeClass('current');
       p.eq(index).addClass('current');
       goto_current(index);
+      console.log("scroll");
     }
   }
-  part_offset_top();
-  setTimeout(window_scroll,0);
+  // setTimeout(window_scroll,0);
   $(window).on('scroll',window_scroll);
-})(jQuery);
+}
 
 /* ---=*--*=*-=*-=-*-=* 🌹 *---=*--*=*-=*-=-*-=*
 侧边栏滚动时固定
 ---=*--*=*-=*-=-*-=* 🌹 *---=*--*=*-=*-=-*-=* */
-function Sidebar($){
+function sidebar($){
   // 以上述配置开始观察目标节点
   // observer.observe(targetNode, config);
   var s=$('.sidebar');
@@ -559,11 +559,16 @@ function Sidebar($){
   var html='';
   html+='<dt><span class="show-list"></span></dt>';
   for (var i = 0; i < arr.length; i++) {
-    html+='<dd><a href="#'+arr[i].id+'" class="auto-scroll" data-offset="-20" data-speed=500>'+arr[i].title+'</a></dd>';
+  	if (i == 0) {
+  	  html+='<dd class="current"><a href="#'+arr[i].id+'" class="auto-scroll" data-offset="-20" data-speed=500>'+arr[i].title+'</a></dd>';
+  	} else {
+      html+='<dd><a href="#'+arr[i].id+'" class="auto-scroll" data-offset="-20" data-speed=500>'+arr[i].title+'</a></dd>';
+  	}
   }
   dl.html(html);
   init();
   check_scroll();
+  part_offset_top();
   $(window).on('resize',init);
   $(window).on('scroll',check_scroll);
 }
